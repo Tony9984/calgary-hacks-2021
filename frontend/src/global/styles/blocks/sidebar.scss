@@ -1,9 +1,9 @@
 .sidebar {
-  background: #2b303a;
-  height: calc(100vh - 2em);
+  background: #1e2251;
+  height: calc(100vh - 4em);
   position: fixed;
   width: 150px;
-  padding: 1em 0;
+  padding: 2em 0;
 }
 
 .sidebar-content {
@@ -22,7 +22,7 @@
   align-items: center;
 
   &__icon {
-    color: grey;
+    color: #E4E4E4;
     margin: 13px 0;
 
     &.MuiSvgIcon-root {
@@ -30,8 +30,6 @@
     }
 
     &:hover {
-      transition: 1s all;
-      color: white;
       cursor: pointer;
     }
   }

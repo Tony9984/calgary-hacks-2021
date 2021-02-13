@@ -1,2 +1,16 @@
 .dashboard {
+  &__search {
+    border: none;
+    border-width: 1px;
+    border: 2px solid #E4E4E4;
+    border-radius: 40px;
+    padding: 10px 15px;
+    font-weight: 540;
+    width: 300px;
+    transition: all 0.5s;
+
+    &:focus {
+      border-color: #1e2251;
+    }
+  }
 }
