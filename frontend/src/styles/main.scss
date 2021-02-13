@@ -1,3 +1,9 @@
+@import '../pages/Dashboard/styles/dashboard.scss';
+
+@import '../global/styles/layout.scss';
+
 html * {
   font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
