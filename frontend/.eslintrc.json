@@ -5,9 +5,9 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
-        "prettier", 
-        "prettier/react"
+        "airbnb"
+        // "prettier", 
+        // "prettier/react"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -20,7 +20,9 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": ["prettier", "react-hooks"],
+    "plugins": [
+      // "prettier", 
+      "react-hooks"],
     "rules": {
       "react/react-in-jsx-scope": "off",
       "react/jsx-filename-extension": "off",
@@ -32,14 +34,14 @@
           "specialLink": ["to"]
         }
       ],
-      "prettier/prettier": [
-        "error",
-        {
-          "bracketSpacing": true,
-          "trailingComma": "all",
-          "singleQuote": true
-        }
-      ],
+      // "prettier/prettier": [
+      //   "error",
+      //   {
+      //     "bracketSpacing": true,
+      //     "trailingComma": "all",
+      //     "singleQuote": true
+      //   }
+      // ],
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "no-console": "off",
