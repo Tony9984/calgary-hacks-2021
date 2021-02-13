@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/dashboard.css') }}">
+</head>
+<body>
+    <div class="logo">
+    </div>
+        
+    <div class="profile">
+        <img class="profile-picture"src="{{ url_for('static',filename='assets/dixon-small.jpg') }}"></img>
+        <p class="profile-name">
+            Dixon Wong
+        </p>
+        <p class="notifications"> 
+            12 New Messages<br/>
+            3 New Calendar Events
+        </p>
+        <img class="home-logo"src="{{ url_for('static',filename='assets/home-logo.png') }}"></img>
+        <p class="home"> 
+            <a href="/dashboard" class="friends-link" >Home </a>
+        </p>
+        <img class="calendar-logo"src="{{ url_for('static',filename='assets/calendar.png') }}"></img>
+        <p class="calendar"> 
+           Calendar
+        </p>
+        <img class="search-logo"src="{{ url_for('static',filename='assets/search.png') }}"></img>
+        <p class="search"> 
+           Search
+        </p>
+        <img class="message-logo"src="{{ url_for('static',filename='assets/messages-logo.png') }}"></img>
+        <p class="message"> 
+            Messages
+        </p>
+        <img class="friends-logo"src="{{ url_for('static',filename='assets/friends.png') }}"> </img>
+        <p class="friends"> 
+            <a href="/friends" class="friends-link" >Friends </a>
+        </p>
+        <img class="settings-logo"src="{{ url_for('static',filename='assets/settings.png') }}"> </img>
+        <p class="settings"> 
+            Settings
+        </p>
+        <div class="logout-button">
+            <p class="logout-text"> 
+                LOG OUT
+            </p>
+        </div>
+
+    </div>
+
+    <!--  SEARCH SECTION -->
+    <div class="search-bar"> 
+        <p class="search-text">
+            Search...
+        </p>
+    </div>
+
+    <div class="search-button">
+        Search
+    </div>
+
+    <!--  COURSES SECTION -->
+
+    <div class="courses">
+        <p class="courses-title"> 
+            COURSES
+        </p>
+        <div class="courses-line"></div>
+        <div class="course-1">
+            <div class="course-name-block">
+                <p class="course-name">
+                    PRINCIPLES OF MARKETING
+                </p>
+            </div>
+            <p class="course-professor">
+                Prof. Hamid Ethemad
+            </p>
+            <img class="courses-image" src="{{ url_for('static',filename='assets/books.png') }}"> </img>
+
+            <div class="course-button">
+                <a href="/classmates" class="course-button-text"> 
+                    View Class
+                </a>
+            </div>
+
+            <div class="course-button-1">
+                <a href="https://teams.microsoft.com/l/team/19%3ae7b8b4fb2bf442a0abce5131949e27d6%40thread.tacv2/conversations?groupId=beb5d313-f758-4451-ba62-dc663d3e53e0&tenantId=cd319671-52e7-4a68-afa9-fcf8f89f09ea" class="course-button-text" target="_blank"> 
+                    Join Teams
+                </a>
+            </div>
+        </div>
+
+        <div class="course-2">
+            <div class="course-name-block">
+                <p class="course-name">
+                    CALCULUS II
+                </p>
+            </div>
+            <p class="course-professor">
+                Prof. James Stewart
+            </p>
+            <img class="courses-image" src="{{ url_for('static',filename='assets/books.png') }}"> </img>
+
+            <div class="course-button">
+                <a href="/classmates" class="course-button-text"> 
+                    View Class
+                </a>
+            </div>
+            
+            <div class="course-button-1">
+                <a href="/classmates" class="course-button-text"> 
+                    Join Teams
+                </a>
+            </div>
+        </div>
+
+        <div class="course-3">
+            <div class="course-name-block">
+                <p class="course-name">
+                    FINANCE
+                </p>
+            </div>
+            <p class="course-professor">
+                Prof. Vadim Di Pietro
+            </p>
+            <img class="courses-image" src="{{ url_for('static',filename='assets/books.png') }}"> </img>
+
+            <div class="course-button">
+                <a href="/classmates" class="course-button-text"> 
+                    View Class
+                </a>
+            </div>
+            
+            <div class="course-button-1">
+                <a href="/classmates" class="course-button-text"> 
+                    Join Teams
+                </a>
+            </div>
+        </div>
+
+        <div class="course-4">
+            <div class="course-name-block">
+                <p class="course-name">
+                    INTERNATIONAL BUSINESS
+                </p>
+            </div>
+            <p class="course-professor">
+                Prof. Chris Moore
+            </p>
+            <img class="courses-image" src="{{ url_for('static',filename='assets/books.png') }}"> </img>
+
+            <div class="course-button">
+                <a href="/classmates" class="course-button-text"> 
+                    View Class
+                </a>
+            </div>
+            
+            <div class="course-button-1">
+                <a href="/classmates" class="course-button-text"> 
+                    Join Teams
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,568 @@
+.logo{
+    position: absolute;
+    width: 69px;
+    height: 60px;
+    left: 1035px;
+    top: 15px;
+
+    background-image: url('../assets/logo.png');
+    background-size: 100%;
+}
+
+.profile{
+    position: absolute;
+    width: 315.93px;
+    height: 910px;
+    left: 16px;
+    top: 10px;
+
+    background: #33658A;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-name{
+    position: relative;
+    width: 226.18px;
+    height: 39.49px;
+    /* left: 60.28px; */
+    top: 247.34px;
+    margin: 0 auto;
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-picture{
+    position: absolute;
+    width: 160.36px;
+    height: 160.36px;
+    left: 80.79px;
+    top: 51.08px;
+    /* margin:auto; */
+    /* float:center; */
+    /* background-image: url('../assets/profile-picture.png');
+    background-size: 100%; */
+    /* border: 1px solid #FFFFFF; */
+    border-radius: 50%;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+.notifications{
+    position: absolute;
+    width: 226.18px;
+    height: 35.9px;
+    left: 85.28px;
+    top: 300.7px; 
+    /* margin: 0 auto; */
+    font-family: Axiforma;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-logo{
+    position: absolute;
+    width: 39.49px;
+    height: 39.49px;
+    left: 85.41px;
+    top: 401.21px;
+    /* background-image: url('../assets/home-logo.png'); */
+    /* background-size: 100%; */
+}
+
+.home{
+    position: absolute;
+    width: 81.38px;
+    height: 35.9px;
+    left: 148.83px;
+    top: 382.19px;
+
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.calendar-logo{
+    position: absolute;
+    width: 41.88px;
+    height: 41.88px;
+    left: 84.21px;
+    top: 470.83px;  
+    /* background-image: url('../assets/home-logo.png'); */
+    /* background-size: 100%; */
+
+}
+
+.calendar{
+    position: absolute;
+    width: 113.69px;
+    height: 35.9px;
+    left: 148.83px;
+    top: 455.4px;
+
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-logo{
+    position: absolute;
+    width: 31.11px;
+    height: 31.11px;
+    left: 90.2px;
+    top: 543.62px;
+
+    /* background-image: url('../assets/search.png');
+    background-size: 100%; */
+}
+
+.search{
+    position: absolute;
+    width: 113.69px;
+    height: 35.9px;
+    left: 148.83px;
+    top: 520.62px;
+
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.message{
+    position: absolute;
+    width: 113.69px;
+    height: 35.9px;
+    left: 148.83px;
+    top: 591.83px;
+
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.message-logo{
+    position: absolute;
+    width: 38.29px;
+    height: 38.29px;
+    left: 85.41px;
+    top: 610.63px;
+
+    /* background-image: url('../assets/messages-logo.png'); */
+    /* background-size: 100%; */
+} 
+
+
+.friends-logo{
+    position: absolute;
+    width: 63.43px;
+    height: 50.26px;
+    left: 73.44px;
+    top: 672.86px;
+
+    /* background-image: url('../assets/friends.png');
+    background-size: 100%; */
+
+}
+
+.friends{
+    position: absolute;
+    width: 113.69px;
+    height: 35.9px;
+    left: 148.83px;
+    top: 660.04px;
+
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.friends-link{
+    text-decoration:none;
+    color:white
+}
+
+.settings-logo{
+    position: absolute;
+    width: 37.1px;
+    height: 37.1px;
+    left: 85.41px;
+    top: 748.25px;
+
+    /* background-image: url('../assets/settings.png');
+    background-size: 100%; */
+}
+
+.settings{
+    position: absolute;
+    width: 113.69px;
+    height: 35.9px;
+    left: 147.64px;
+    top: 729.45px;
+
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logout-text{
+
+    /* position: absolute; */
+    width: 84px;
+    height: 36px;
+    /* left: 119px;
+    top: 80px; */
+
+    margin: auto;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 27px;
+    /* display: flex; */
+    align-items: center; 
+    text-align: center; 
+    /* float:center; */
+
+    /* color: #33658A; */
+    /* color: yellow; */
+
+}
+
+.logout-button{
+    position: absolute;
+    width: 99px;
+    height: 27px;
+    left: 110px;
+    top: 845px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+
+
+
+.search-bar{
+    /* position: absolute;
+    width: 1425px;
+    height: 54px;
+    left: 425px;
+    top: 155px; */
+    position: absolute;
+    width: 1200px;
+    height: 46px;
+    left: 400px;
+    top: 100px;
+
+    background: #FFFFFF;
+    border: 1px solid #33658A;
+    box-sizing: border-box;
+}
+
+.search-text{
+    /* position: absolute; */
+    /* width: 92px; */
+    /* height: 34px; */
+    /* top: 1px; */
+    padding-left: 10px;
+    margin: auto 0;
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    text-align:left;
+
+    color: rgba(0, 0, 0, 0.51);
+
+}
+
+.search-button{
+    position: absolute;
+    width: 117px;
+    height: 46px;
+    left: 1620px;
+    top: 100px;
+    color: white;
+    text-align:center;
+    line-height:46px;
+    background: #33658A;
+}
+
+.filters {
+    position: absolute;
+    width: 779.06px;
+    height: 28.94px;
+    left: 353.46px;
+    top: 160.49px;
+}
+
+.filter-text-1{
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.filter-button{
+    position:relative;
+    left:15px;
+    top:5px;
+}
+
+.filters-line-break-1{
+    position: absolute;
+    width: 25.94px;
+    height: 0px;
+    left: 115.45px;
+    top: 10px;
+    /* display:inline; */
+
+    border: 1px solid #000000;
+    transform: rotate(-90deg);
+}
+.filters-line-break-2{
+    position: absolute;
+    width: 25.94px;
+    height: 0px;
+    left: 115.45px;
+    top: 10px;
+    /* display:inline; */
+
+    border: 1px solid #000000;
+    transform: rotate(-90deg);
+}
+.filters-line-break-3{
+    position: absolute;
+    width: 25.94px;
+    height: 0px;
+    left: 165.45px;
+    top: 10px;
+    /* display:inline; */
+
+    border: 1px solid #000000;
+    transform: rotate(-90deg);
+}
+
+.filter-1{
+    position:relative;
+    width:150px;
+    display:inline;
+    margin-left:50px;
+}
+
+.classmate-1{
+    position: absolute;
+    width: 1425px;
+    height: 151.09px;
+    left: 425px;
+    top: 215px;
+}
+
+.classmate-title{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 150.12px;
+    top: 0px;
+}
+
+.classmate-name{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    /* left: 150.12px; */
+    /* top: 15px; */
+    margin:auto;
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #33658A;
+}
+
+.classmate-school{
+    position: absolute;
+    width: 300px;
+    height: 29.08px;
+    left: 600px;
+    top:2px;
+    /* top: 325px; */
+    margin:auto;
+    margin-left: 100px;
+    font-family: Axiforma;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 33px;
+    display: inline;
+    align-items: center;
+    text-align: right;
+    border: thick 1 black;
+    color: #000000;
+}
+
+.classmate-bio{
+    position: absolute;
+    width: 1001px;
+    height: 53px;
+    left: 150px;
+    top: 30px;
+
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.classmate-button-message{
+    position: absolute;
+    width: 150px;
+    height: 54px;
+    left: 1170px;
+    top: 35px;
+    text-align:center;
+    align-items: center;
+    background: #33658A;
+}
+.classmate-button-connect{
+    position: absolute;
+    width: 150px;
+    height: 54px;
+    left: 1170px;
+    top: 35px;
+    text-align:center;
+    align-items: center;
+    background: #27AE60;
+    border-radius: 200px;
+}
+.classmate-button-text{
+    font-family: Axiforma;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 54px;
+    /* display: flex; */
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.classmate-separator{
+    position: absolute;
+    width: 1001px;
+    height: 0px;
+    left: 150px;
+    top: 145px;
+
+    border: 1px solid #000000;
+    transform: rotate(0.06deg);
+}
+
+
+.classmate-2{
+    position: absolute;
+    width: 1425px;
+    height: 151.09px;
+    left: 425px;
+    top: 385px;
+}
+
+.classmate-3{
+    position: absolute;
+    width: 1425px;
+    height: 151.09px;
+    left: 425px;
+    top: 565px;
+}
+
+.classmate-4{
+    position: absolute;
+    width: 1425px;
+    height: 151.09px;
+    left: 425px;
+    top: 745px;
+}

@@ -1,0 +1,193 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #33658A;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  align-items: right;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.logo{
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  left: 920px;
+  top: 15px;
+
+  background-image: url('../assets/logo-2.png');
+  background-size: 100%;
+}
+
+.test {
+  margin:0;
+  padding:0;
+  position: absolute;
+  left: 1240px;
+  top: -136px;
+  background-image: url('../assets/whitegirl.png');
+  width:679.2px;
+  height:1072.8px;
+  /* width: 566px; */
+  /* height: 944px; */
+  overflow:auto;
+  /* border: thick solid black; */
+  background-size: cover;
+  background-size:100%;
+  /* float:right; */
+}
+
+.lead[role=maintext]{ 
+  /* font-family: Axiforma; */
+  position: absolute;
+  width: 766px;
+  height: 40px;
+  left: 189px;
+  top: 389px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 71px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.lead[role=subtext]{
+  position: absolute;
+  width: 712px;
+  height: 159px;
+  left: 189px;
+  top: 429px;
+  
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.lead[role=sign-in-button]{
+  position: absolute;
+  width: 187px;
+  height: 41px;
+  left: 189px;
+  top: 567px;
+}
+
+.picture {
+  max-height:30px;
+  /* max-width: auto; */
+}
+
+.sign-in {
+  background-image: url('../assets/ms-logo.png');
+  background-size: auto;
+}
+
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}

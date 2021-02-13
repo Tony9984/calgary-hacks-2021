@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Ping - Connect with others</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+
+    <!-- Custom styles for this template -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/cover.css') }}">
+  </head>
+
+  <body class="text-center">
+    <div class="test"> </div>
+    <div class="logo"></div>
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+      
+      <main role="main" class="inner cover">
+        <p class="lead" role="maintext">FIND STUDENTS TAKING YOUR COURSE</p>
+
+        <p class="lead" role="subtext"> The matching platform to study together </p>
+        <p class="lead" role="sign-in-button">
+          <a href='{{ auth_url }}' class="btn btn-lg btn-secondary" >
+            <img class="picture" src="{{ url_for('static',filename='assets/ms-logo.png') }}" ></img> Sign in with Microsoft
+          </a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+           <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>  -->
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/friends.css') }}">
+</head>
+<body>
+    <div class="logo">
+    </div>
+        
+    <div class="profile">
+        <img class="profile-picture"src="{{ url_for('static',filename='assets/dixon-small.jpg') }}"></img>
+        <p class="profile-name">
+            Dixon Wong
+        </p>
+        <p class="notifications"> 
+            12 New Messages<br/>
+            3 New Calendar Events
+        </p>
+        <img class="home-logo"src="{{ url_for('static',filename='assets/home-logo.png') }}"></img>
+        <p class="home"> 
+            <a href="/dashboard" class="friends-link" >Home </a>
+        </p>
+        <img class="calendar-logo"src="{{ url_for('static',filename='assets/calendar.png') }}"></img>
+        <p class="calendar"> 
+           Calendar
+        </p>
+        <img class="search-logo"src="{{ url_for('static',filename='assets/search.png') }}"></img>
+        <p class="search"> 
+           Search
+        </p>
+        <img class="message-logo"src="{{ url_for('static',filename='assets/messages-logo.png') }}"></img>
+        <p class="message"> 
+            Messages
+        </p>
+        <img class="friends-logo"src="{{ url_for('static',filename='assets/friends.png') }}"> </img>
+        <p class="friends"> 
+            <a href="/friends" class="friends-link" >Friends </a>
+        </p>
+        <img class="settings-logo"src="{{ url_for('static',filename='assets/settings.png') }}"> </img>
+        <p class="settings"> 
+            Settings
+        </p>
+        <div class="logout-button">
+            <p class="logout-text"> 
+                LOG OUT
+            </p>
+        </div>
+
+    </div>
+
+    <!--  SEARCH SECTION -->
+    <div class="search-bar"> 
+        <p class="search-text">
+            Search...
+        </p>
+    </div>
+
+    <div class="search-button">
+        Search
+    </div>
+
+        <div class="filters">
+        <div class="filter-1">
+            <span class="filter-text-1"><b>Language</b></span> <img class="filter-button" src="{{ url_for('static',filename='assets/polygon.png') }}">  </img> 
+            <div class="filters-line-break-1">
+            </div>
+        </div>
+        <div class="filter-1">
+            <span class="filter-text-1"><b>Time Zone</b></span> <img class="filter-button" src="{{ url_for('static',filename='assets/polygon.png') }}">  </img>
+            <div class="filters-line-break-2">
+            </div>
+        </div>
+        <div class="filter-1">
+            <span class="filter-text-1"><b>Study Preferences</b></span> <img class="filter-button" src="{{ url_for('static',filename='assets/polygon.png') }}">  </img>
+            <div class="filters-line-break-3">
+            </div>
+        </div>
+        <div class="filter-1">
+            <span class="filter-text-1"><b>Group Preferences</b></span> <img class="filter-button" src="{{ url_for('static',filename='assets/polygon.png') }}">  </img>
+        </div>
+    </div>
+    
+    <!--  CLASSMATES SECTION -->
+
+    <div class="classmate-1">
+        <img class="classmate-logo"src="{{ url_for('static',filename='assets/lifeng-small.jpg') }}"> </img>
+        <img class="friend-heart"src="{{ url_for('static',filename='assets/heart.png') }}"> </img>
+        <p class="classmate-title">
+            <span class="classmate-name">Lifeng Li </span> <span class="classmate-school"> Desautels Faculty of Management - McGill University  </span>
+        </p>
+        <p class="classmate-bio">
+           <i>Currently connected in a study session for Calculus II</i>
+        </p>
+
+        <div class="classmate-button-connect">
+            <a target="_blank" href="https://teams.microsoft.com/l/meetup-join/19%3ae7b8b4fb2bf442a0abce5131949e27d6%40thread.tacv2/1601746029620?context=%7b%22Tid%22%3a%22cd319671-52e7-4a68-afa9-fcf8f89f09ea%22%2c%22Oid%22%3a%2268b5df90-aac2-4bf6-a3b1-4e2fa7ae337f%22%7d" class="classmate-button-text">
+                CONNECT LIVE!
+            </a>
+        </div>
+
+        <div class="classmate-separator">
+        </div>
+
+    </div>
+
+        <div class="classmate-2">
+        <img class="classmate-logo"src="{{ url_for('static',filename='assets/maxime-small.jpg') }}"> </img>
+        <img class="friend-heart"src="{{ url_for('static',filename='assets/heart.png') }}"> </img>
+        <p class="classmate-title">
+            <span class="classmate-name">Maxime Harfouche </span> <span class="classmate-school"> Desautels Faculty of Management - McGill University  </span>
+        </p>
+        <p class="classmate-bio">
+            <i>Currently connected in a study session for Calculus II</i>
+        </p>
+
+        <div class="classmate-button-connect">
+            <a target="_blank" href="https://teams.microsoft.com/l/meetup-join/19%3ae7b8b4fb2bf442a0abce5131949e27d6%40thread.tacv2/1601746029620?context=%7b%22Tid%22%3a%22cd319671-52e7-4a68-afa9-fcf8f89f09ea%22%2c%22Oid%22%3a%2268b5df90-aac2-4bf6-a3b1-4e2fa7ae337f%22%7d" class="classmate-button-text">
+                CONNECT LIVE!
+            </a>
+        </div>
+
+        <div class="classmate-separator">
+        </div>
+
+    </div>
+
+        <div class="classmate-3">
+        <img class="classmate-logo"src="{{ url_for('static',filename='assets/michael-small.jpg') }}"> </img>
+        <img class="friend-heart"src="{{ url_for('static',filename='assets/heart.png') }}"> </img>
+        <p class="classmate-title">
+            <span class="classmate-name">Michael Li </span> <span class="classmate-school"> Faculty of Engineering - McGill University  </span>
+        </p>
+        <p class="classmate-bio">
+            <i>Currently connected in a study session for Calculus II</i>
+        </p>
+
+        <div class="classmate-button-connect">
+            <a target="_blank" href="https://teams.microsoft.com/l/meetup-join/19%3ae7b8b4fb2bf442a0abce5131949e27d6%40thread.tacv2/1601746029620?context=%7b%22Tid%22%3a%22cd319671-52e7-4a68-afa9-fcf8f89f09ea%22%2c%22Oid%22%3a%2268b5df90-aac2-4bf6-a3b1-4e2fa7ae337f%22%7d" class="classmate-button-text">
+                CONNECT LIVE!
+            </a>
+        </div>
+
+        <div class="classmate-separator">
+        </div>
+
+    </div>
+
+        <div class="classmate-4">
+        <img class="classmate-logo"src="{{ url_for('static',filename='assets/william-small.jpg') }}"> </img>
+        <img class="friend-heart"src="{{ url_for('static',filename='assets/heart.png') }}"> </img>
+        <p class="classmate-title">
+            <span class="classmate-name">William Zhang </span> <span class="classmate-school"> Faculty of Engineering - McGill University  </span>
+        </p>
+        <p class="classmate-bio">
+            <i>Currently connected in a study session for Calculus II</i>
+        </p>
+
+        <div class="classmate-button-connect">
+            <a target="_blank" href="https://teams.microsoft.com/l/meetup-join/19%3ae7b8b4fb2bf442a0abce5131949e27d6%40thread.tacv2/1601746029620?context=%7b%22Tid%22%3a%22cd319671-52e7-4a68-afa9-fcf8f89f09ea%22%2c%22Oid%22%3a%2268b5df90-aac2-4bf6-a3b1-4e2fa7ae337f%22%7d" class="classmate-button-text">
+                CONNECT LIVE!
+            </a>
+        </div>
+
+        <div class="classmate-separator">
+        </div>
+
+        <div class="pages">
+        </div>
+
+    </div>
+
+</body>
+</html>
+

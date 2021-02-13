@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/classmates.css') }}">
+</head>
+<body>
+    <div class="logo">
+    </div>
+        
+    <div class="profile">
+        <img class="profile-picture"src="{{ url_for('static',filename='assets/dixon-small.jpg') }}"></img>
+        <p class="profile-name">
+            Dixon Wong
+        </p>
+        <p class="notifications"> 
+            12 New Messages<br/>
+            3 New Calendar Events
+        </p>
+        <img class="home-logo"src="{{ url_for('static',filename='assets/home-logo.png') }}"></img>
+        <p class="home"> 
+            <a href="/dashboard" class="friends-link" >Home </a>
+        </p>
+        <img class="calendar-logo"src="{{ url_for('static',filename='assets/calendar.png') }}"></img>
+        <p class="calendar"> 
+           Calendar
+        </p>
+        <img class="search-logo"src="{{ url_for('static',filename='assets/search.png') }}"></img>
+        <p class="search"> 
+           Search
+        </p>
+        <img class="message-logo"src="{{ url_for('static',filename='assets/messages-logo.png') }}"></img>
+        <p class="message"> 
+            Messages
+        </p>
+        <img class="friends-logo"src="{{ url_for('static',filename='assets/friends.png') }}"> </img>
+        <p class="friends"> 
+            <a href="/friends" class="friends-link" >Friends </a>
+        </p>
+        <img class="settings-logo"src="{{ url_for('static',filename='assets/settings.png') }}"> </img>
+        <p class="settings"> 
+            Settings
+        </p>
+        <div class="logout-button">
+            <p class="logout-text"> 
+                LOG OUT
+            </p>
+        </div>
+
+    </div>
+
+    <!--  SEARCH SECTION -->
+    <div class="search-bar"> 
+        <p class="search-text">
+            Search...
+        </p>
+    </div>
+
+    <div class="search-button">
+        Search
+    </div>
+
+    <div class="filters">
+        <div class="filter-1">
+            <span class="filter-text-1"><b>Language</b></span> <img class="filter-button" src="{{ url_for('static',filename='assets/polygon.png') }}">  </img> 
+            <div class="filters-line-break-1">
+            </div>
+        </div>
+        <div class="filter-1">
+            <span class="filter-text-1"><b>Time Zone</b></span> <img class="filter-button" src="{{ url_for('static',filename='assets/polygon.png') }}">  </img>
+            <div class="filters-line-break-2">
+            </div>
+        </div>
+        <div class="filter-1">
+            <span class="filter-text-1"><b>Study Preferences</b></span> <img class="filter-button" src="{{ url_for('static',filename='assets/polygon.png') }}">  </img>
+            <div class="filters-line-break-3">
+            </div>
+        </div>
+        <div class="filter-1">
+            <span class="filter-text-1"><b>Group Preferences</b></span> <img class="filter-button" src="{{ url_for('static',filename='assets/polygon.png') }}">  </img>
+        </div>
+    </div>
+
+    <!--  CLASSMATES SECTION -->
+
+    <div class="classmate-1">
+        <img class="classmate-logo"src="{{ url_for('static',filename='assets/alexander-picture.png') }}"> </img>
+        <p class="classmate-title">
+            <span class="classmate-name">Alexander Bernard </span> <span class="classmate-school"> Desautels Faculty of Management - McGill University  </span>
+        </p>
+        <p class="classmate-bio">
+            Hey everyone, I am always open to meet new people, and study in groups. I really enjoy working with others and help when needed. I was born in Texas and raised in Montreal, so I speak English and French. Feel free to send me a message !
+        </p>
+
+        <div class="classmate-button-connect">
+            <a href="#" class="classmate-button-text">
+                MESSAGE NOW
+            </a>
+        </div>
+
+        <div class="classmate-separator">
+        </div>
+
+    </div>
+
+        <div class="classmate-2">
+        <img class="classmate-logo"src="{{ url_for('static',filename='assets/christian.png') }}"> </img>
+        <p class="classmate-title">
+            <span class="classmate-name">Christian Searle </span> <span class="classmate-school"> Faculty of Arts - McGill University  </span>
+        </p>
+        <p class="classmate-bio">
+            Hey I'm Christian, I'm a Computer Science Major with a minor in Biology. I have experience in Java, C and Python, I'd love to connect with you! I prefer to study in small groups and I speak French, Spanish and Cantonese.
+        </p>
+
+        <div class="classmate-button-connect">
+            <a href="#" class="classmate-button-text">
+                MESSAGE NOW
+            </a>
+        </div>
+
+        <div class="classmate-separator">
+        </div>
+
+    </div>
+
+        <div class="classmate-3">
+        <img class="classmate-logo"src="{{ url_for('static',filename='assets/friend-3.png') }}"> </img>
+        <p class="classmate-title">
+            <span class="classmate-name">Britney Fabray </span> <span class="classmate-school"> Desautels Faculty of Management - McGill University  </span>
+        </p>
+        <p class="classmate-bio">
+            Hey all, Britney here. Looking for a study buddy or group for Consumer Behaviour! I’m great at numbers, but need help with the different types of heuristics. Let’s connect!
+        </p>
+
+        <div class="classmate-button-message">
+            <a href="#" class="classmate-button-text">
+                SEND MESSAGE
+            </a>
+        </div>
+
+        <div class="classmate-separator">
+        </div>
+
+    </div>
+
+        <div class="classmate-4">
+        <img class="classmate-logo"src="{{ url_for('static',filename='assets/friend-5.png') }}"> </img>
+        <p class="classmate-title">
+            <span class="classmate-name">Justeen Sutton </span> <span class="classmate-school"> Faculty of Engineering - McGill University  </span>
+        </p>
+        <p class="classmate-bio">
+            Hey everyone, I’m in my last year majoring in finance, minoring in computer science, I speak Italian, French and English, so don’t be shy to come say hi to me, I’m really good with numbers and presenting.
+        </p>
+
+        <div class="classmate-button-message">
+            <a href="#" class="classmate-button-text">
+                SEND MESSAGE
+            </a>
+        </div>
+
+        <div class="classmate-separator">
+        </div>
+
+        <div class="pages">
+        </div>
+
+    </div>
+
+</body>
+</html>
+
