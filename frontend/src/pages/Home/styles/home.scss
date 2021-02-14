@@ -1,0 +1,57 @@
+.landing-page {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  display: flex;
+  justify-content: space-evenly;
+
+  .landing-description {
+    margin-top: auto;
+    margin-bottom: auto
+  }
+
+  &__header {
+    font-size: 100px;
+    color: #AC6661;
+
+  }
+
+  &__subheader {
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .microsoft-btn {
+    border: none;
+    background: none;
+  }
+
+  .landing-image {
+    margin-top: 10px;
+  }
+}
+
+.navbar__search {
+  border: none;
+  border-width: 1px;
+  border: 2px solid #E4E4E4;
+  border-radius: 40px;
+  padding: 10px 15px;
+  font-weight: 540;
+  width: 500px;
+  transition: all 0.5s;
+  margin-right: 33%;
+}
+
+.MuiTypography-root {
+  font-family: Avenir Next !important;
+}
+
+.MuiButton-label {
+  font-family: Avenir Next !important;
+}

@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable array-callback-return */
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Course from '../components/Course';
 import Science from '../../../assets/science.svg';
@@ -50,29 +51,40 @@ const Dashboard = () => {
     },
   ];
 
+  const [search, setSearch] = useState('');
+
   return (
     <div className="dashboard">
-      <input className="dashboard__search" placeholder="Search..." />
+      <input
+        className="dashboard__search"
+        placeholder="Search..."
+        value={search}
+        onChange={e => setSearch(e.target.value)}
+      />
       <div className="dashboard-courses">
         <h1 className="dashboard-courses__header">
           Current <b>Courses</b>
         </h1>
         <div className="dashboard-courses__courses">
-          {courses.map(({ name, instructor, image }, index) => {
-            return (
-              <Link
-                to="/course/calculusII"
-                style={{ textDecoration: 'none', color: 'inherit' }}
-              >
-                <Course
-                  name={name}
-                  instructor={instructor}
-                  image={image}
-                  index={index}
-                />
-              </Link>
-            );
-          })}
+          {courses
+            .filter(course =>
+              course.name.toLowerCase().includes(search.toLowerCase()),
+            )
+            .map(({ name, instructor, image }, index) => {
+              return (
+                <Link
+                  to="/course/calculusII"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <Course
+                    name={name}
+                    instructor={instructor}
+                    image={image}
+                    index={index}
+                  />
+                </Link>
+              );
+            })}
         </div>
       </div>
       <div className="dashboard-courses">
@@ -80,17 +92,25 @@ const Dashboard = () => {
           Past <b>Courses</b>
         </h1>
         <div className="dashboard-courses__courses">
-          {pastCourses.map(({ name, instructor, image }, index) => {
-            return (
-              <Course
-                name={name}
-                instructor={instructor}
-                image={image}
-                index={index}
-                isPast
-              />
-            );
-          })}
+          {pastCourses
+            .filter(course =>
+              course.name.toLowerCase().includes(search.toLowerCase()),
+            )
+            .map(({ name, instructor, image }, index) => {
+              return (
+                <Link
+                  to="/course/calculusII"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <Course
+                    name={name}
+                    instructor={instructor}
+                    image={image}
+                    index={index}
+                  />
+                </Link>
+              );
+            })}
         </div>
       </div>
     </div>
