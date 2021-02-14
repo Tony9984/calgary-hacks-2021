@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Course from '../../Dashboard/components/Course';
-import Science from '../../../assets/science.svg';
 import Math from '../../../assets/math.svg';
 import Finance from '../../../assets/finance.svg';
 import Marketing from '../../../assets/presentation.svg';
@@ -14,63 +13,74 @@ const Profile = ({ match }) => {
   } = match;
   const courses = [
     {
-      name: 'Principles Of Marketing',
-      instructor: 'Hamid Ethemad',
-      image: Marketing,
+      courseName: 'Operating Systems',
+      instructor: 'Joseph Vybihal',
+      image: Computer,
     },
     {
-      name: 'Calculus II',
-      instructor: 'James Stewart',
+      courseName: 'Linear Algebra',
+      instructor: 'Pythagoras Samos',
       image: Math,
     },
     {
-      name: 'Finance',
-      instructor: 'Vadim Di Pietro',
+      courseName: 'Probability & Statistics',
+      instructor: 'Russell Steele',
       image: Finance,
-    },
-    {
-      name: 'Data Structures',
-      instructor: 'Chris Moore',
-      image: Computer,
     },
   ];
 
   const pastCourses = [
     {
-      name: 'Calculus I',
+      courseName: 'Calculus II',
       instructor: 'James Stewart',
       image: Math,
     },
     {
-      name: 'Biology I',
-      instructor: 'Hamid Ethemad',
-      image: Science,
-    },
-    {
-      name: 'Physics II',
+      courseName: 'Astrophysics',
       instructor: 'Vadim Di Pietro',
       image: Physics,
     },
+    {
+      courseName: 'Intro to C++',
+      instructor: 'Joseph Vybihal',
+      image: Computer,
+    },
+    {
+      courseName: 'Principles Of Marketing',
+      instructor: 'Hamid Ethemad',
+      image: Marketing,
+    },
   ];
+
+  const [search, setSearch] = useState('');
 
   return (
     <div className="dashboard">
-      <input className="dashboard__search" placeholder="Search..." />
+      <input
+        className="dashboard__search"
+        placeholder="Search..."
+        value={search}
+        onChange={e => setSearch(e.target.value)}
+      />
       <div className="dashboard-courses">
         <h1 className="dashboard-courses__header">
           {name}&apos;s Current <b>Courses</b>
         </h1>
         <div className="dashboard-courses__courses">
-          {courses.map(({ courseName, instructor, image }, index) => {
-            return (
-              <Course
-                name={courseName}
-                instructor={instructor}
-                image={image}
-                index={index}
-              />
-            );
-          })}
+          {courses
+            .filter(course =>
+              course.courseName.toLowerCase().includes(search.toLowerCase()),
+            )
+            .map(({ courseName, instructor, image }, index) => {
+              return (
+                <Course
+                  name={courseName}
+                  instructor={instructor}
+                  image={image}
+                  index={index}
+                />
+              );
+            })}
         </div>
       </div>
       <div className="dashboard-courses">
@@ -78,17 +88,20 @@ const Profile = ({ match }) => {
           {name}&apos;s Past <b>Courses</b>
         </h1>
         <div className="dashboard-courses__courses">
-          {pastCourses.map(({ courseName, instructor, image }, index) => {
-            return (
-              <Course
-                name={courseName}
-                instructor={instructor}
-                image={image}
-                index={index}
-                isPast
-              />
-            );
-          })}
+          {pastCourses
+            .filter(course =>
+              course.courseName.toLowerCase().includes(search.toLowerCase()),
+            )
+            .map(({ courseName, instructor, image }, index) => {
+              return (
+                <Course
+                  name={courseName}
+                  instructor={instructor}
+                  image={image}
+                  index={index}
+                />
+              );
+            })}
         </div>
       </div>
     </div>
