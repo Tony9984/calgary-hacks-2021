@@ -4,7 +4,6 @@ import '../styles/home.scss';
 import AzureAuthenticationButton from '../../../azure/azure-authentication-component';
 
 const Course = () => {
-
   // const [currentUser, setCurrentUser] = useState();
 
   // const onAuthenticated = async (userAccountInfo) => {
