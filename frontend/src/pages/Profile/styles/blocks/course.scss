@@ -1,0 +1,52 @@
+@mixin course {
+  background: white;
+  border-radius: 30px;
+  height: 200px;
+  width: 180px;
+  margin: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em 2em;
+  border: 2px solid #E4E4E4;
+  transition: all 0.5s;
+}
+
+.course {
+  @include course();
+
+  &--past {
+    @include course();
+    opacity: 0.4;
+
+    &:hover {
+      cursor: pointer;
+      border-color: #1e2251;
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: #1e2251;
+  }
+
+  &__image {
+    width: 120px;
+    height: 120px;
+  }
+
+  &__header {
+    font-weight: 560;
+    color: #1e2251;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
