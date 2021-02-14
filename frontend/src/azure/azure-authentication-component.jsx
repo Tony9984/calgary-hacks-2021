@@ -31,9 +31,10 @@ const AzureAuthenticationButton = ({ onAuthenticated }) => {
   };
   const returnedAccountInfo = (user) => {
     // set state
-    setAuthenticated((user === null || user === void 0 ? void 0 : user.name) ? true : false);
-    onAuthenticated(user);
-    setUser(user);
+    // alert('ok')
+    // setAuthenticated((user === null || user === void 0 ? void 0 : user.name) ? true : false);
+    // onAuthenticated(user);
+    // setUser(user);
 
     if (authenticated) {
       history.push("/dashboard");
