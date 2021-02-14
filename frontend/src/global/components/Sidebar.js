@@ -10,7 +10,7 @@ import { Tooltip, Avatar, Badge } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
 import Tony from '../../assets/Tony.jpeg';
-
+// prettier-ignore
 const StyledBadge = withStyles(theme => ({
   badge: {
     backgroundColor: '#44b700',

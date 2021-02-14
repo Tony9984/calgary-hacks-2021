@@ -33,7 +33,7 @@ const Friends = () => {
       connection: 'Currently connected in a study session for Calculus II',
     },
   ];
-
+  // prettier-ignore
   const friendList = friends.map(person => {
     return (
       <Friend
