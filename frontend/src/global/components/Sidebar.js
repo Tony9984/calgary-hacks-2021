@@ -29,7 +29,7 @@ const Sidebar = () => {
         </StyledBadgeOnline>
         <div className="sidebar-icons">
           <Tooltip title="Dashboard" placement="right">
-            <Link to="/">
+            <Link to="/dashboard">
               <DashboardOutlinedIcon className="sidebar-icons__icon" />
             </Link>
           </Tooltip>
