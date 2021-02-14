@@ -1,7 +1,6 @@
 .landing-page {
-  position: absolute;
-  top: 25%;
-  left: 25%;
+  margin: 0 10%;
+  margin-top: 10%;
   display: flex;
   justify-content: space-evenly;
 
@@ -29,6 +28,7 @@
   .microsoft-btn {
     border: none;
     background: none;
+    cursor: pointer;
   }
 
   .landing-image {
