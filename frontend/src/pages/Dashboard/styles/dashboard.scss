@@ -1,0 +1,44 @@
+@import './blocks/course.scss';
+
+.dashboard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__search {
+    border: none;
+    border-width: 1px;
+    border: 2px solid #E4E4E4;
+    border-radius: 40px;
+    padding: 10px 15px;
+    font-weight: 540;
+    width: 300px;
+    transition: all 0.5s;
+    position: absolute;
+    top: 2.5em;
+    height: 20px;
+
+    &:focus {
+      border-color: #1e2251;
+    }
+  }
+}
+
+.dashboard-courses {
+  position: relative;
+  left: 5px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+
+  &__header {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  &__courses {
+    display: flex;
+    align-items: center;
+  }
+}

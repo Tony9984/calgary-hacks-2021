@@ -1,0 +1,38 @@
+.sidebar {
+  background: #1e2251;
+  height: calc(100vh - 4em);
+  position: fixed;
+  width: 170px;
+  padding: 2em 0;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  right: 25px;
+  position: relative;
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 160px;
+
+  &__icon {
+    color: #E4E4E4;
+    margin: 13px 0;
+
+    &.MuiSvgIcon-root {
+      font-size: 1.9rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

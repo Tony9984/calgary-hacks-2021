@@ -1,0 +1,91 @@
+.course-page {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+
+  &__header {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    margin-right: 70px;
+  }
+
+  &__search {
+    border: none;
+    border-width: 1px;
+    border: 2px solid #E4E4E4;
+    border-radius: 40px;
+    padding: 10px 15px;
+    font-weight: 540;
+    width: 300px;
+    transition: all 0.5s;
+    height: 18px;
+
+    &:focus {
+      border-color: #1e2251;
+    }
+  }
+
+  &__button.MuiButton-contained {
+    background: #1e2251;
+    color: white;
+    height: 35px;
+
+    &:hover {
+      background: #1e2251;
+      opacity: 0.7;
+    }
+  }
+}
+
+.course-page-header {
+  display: flex;
+}
+
+.course-page-info {
+  margin: 2em 0;
+  margin-bottom: 4em;
+
+  &__text {
+    font-size: 1.3rem;
+  }
+}
+
+.course-page-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.course-page-info-content {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.course-classmates {
+  overflow-y: scroll;
+  border-radius: 30px 0 0 30px;
+  max-height: 400px;
+  background: white;
+  padding: 1em 2em;
+  border: 2px solid #1e2251;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(234, 45%, 33%);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e2251;
+  cursor: pointer;
+}

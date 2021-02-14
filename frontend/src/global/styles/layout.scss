@@ -1,0 +1,12 @@
+@import './blocks/sidebar.scss';
+
+.layout {
+  position: relative;
+  left: 120px;
+  z-index: 99;
+  background: #f5f5f8;
+  height: calc(100vh - 4em);
+  width: calc(100vw - 250px);
+  border-radius: 50px 0 0 50px;
+  padding: 2em 4em;
+}

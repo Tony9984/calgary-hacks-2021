@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Course from '../components/Course';
+import PropTypes from 'prop-types';
+import Course from '../../Dashboard/components/Course';
 import Science from '../../../assets/science.svg';
 import Math from '../../../assets/math.svg';
 import Finance from '../../../assets/finance.svg';
@@ -8,7 +8,10 @@ import Marketing from '../../../assets/presentation.svg';
 import Computer from '../../../assets/computer.svg';
 import Physics from '../../../assets/startup.svg';
 
-const Dashboard = () => {
+const Profile = ({ match }) => {
+  const {
+    params: { name },
+  } = match;
   const courses = [
     {
       name: 'Principles Of Marketing',
@@ -21,7 +24,7 @@ const Dashboard = () => {
       image: Math,
     },
     {
-      name: 'Intro to Finance',
+      name: 'Finance',
       instructor: 'Vadim Di Pietro',
       image: Finance,
     },
@@ -55,35 +58,30 @@ const Dashboard = () => {
       <input className="dashboard__search" placeholder="Search..." />
       <div className="dashboard-courses">
         <h1 className="dashboard-courses__header">
-          Current <b>Courses</b>
+          {name}&apos;s Current <b>Courses</b>
         </h1>
         <div className="dashboard-courses__courses">
-          {courses.map(({ name, instructor, image }, index) => {
+          {courses.map(({ courseName, instructor, image }, index) => {
             return (
-              <Link
-                to="/course/calculusII"
-                style={{ textDecoration: 'none', color: 'inherit' }}
-              >
-                <Course
-                  name={name}
-                  instructor={instructor}
-                  image={image}
-                  index={index}
-                />
-              </Link>
+              <Course
+                name={courseName}
+                instructor={instructor}
+                image={image}
+                index={index}
+              />
             );
           })}
         </div>
       </div>
       <div className="dashboard-courses">
         <h1 className="dashboard-courses__header">
-          Past <b>Courses</b>
+          {name}&apos;s Past <b>Courses</b>
         </h1>
         <div className="dashboard-courses__courses">
-          {pastCourses.map(({ name, instructor, image }, index) => {
+          {pastCourses.map(({ courseName, instructor, image }, index) => {
             return (
               <Course
-                name={name}
+                name={courseName}
                 instructor={instructor}
                 image={image}
                 index={index}
@@ -97,4 +95,12 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+Profile.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      name: PropTypes.string,
+    }),
+  }).isRequired,
+};
+
+export default Profile;
