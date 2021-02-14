@@ -1,55 +1,71 @@
-.friend-container {
+.friend {
   display: flex;
   justify-content: space-between;
-  margin-right: 10%;
+  align-items: center;
+  height: 100px;
 
-  .flex-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .profile-picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 10%;
-    min-width: 100px;
-  }
-
-  .center-vertical {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "Open Sans", sans-serif !important;
-
-    .profile-name,
-    .profile-faculty {
-      font-family: "Open Sans", sans-serif;
-    }
-  }
-  .connect-btn {
+  &__button {
     border: none;
     background: none;
   }
 
-  .MuiButton-root {
-    min-width: 0 !important;
-  }
-
-  .connect-icon {
+  &__icon {
     font-size: 40px !important;
-  }
-
-  .connect-icon:hover {
-    opacity: 0.5;
-    cursor: pointer;
   }
 }
 
+.friend-info {
+  display: flex;
+  width: 35%;
+
+  &__avatar.MuiAvatar-root {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.friend-info-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+
+  &__name {
+    font-weight: 560;
+    color: #1e2251;
+    text-align: left;
+    width: 100%;
+    margin: 5px;
+  }
+
+  &__faculty {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10%;
+  min-width: 100px;
+}
+
+.friend-status {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.connect-icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .hr2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 90%;
+  width: 100%;
   border: 0;
   border-top: 1px solid rgba(0,0,0,.3);
 }
