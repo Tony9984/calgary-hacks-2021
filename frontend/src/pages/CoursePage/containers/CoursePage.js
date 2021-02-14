@@ -72,7 +72,7 @@ const Course = () => {
           href={meetingUrl}
           target="_blank"
         >
-          Join study call
+          Join TEAMS
         </Button>
       </div>
       <div className="course-page-info">
