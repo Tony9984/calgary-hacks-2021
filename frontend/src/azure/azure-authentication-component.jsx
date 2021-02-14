@@ -20,10 +20,6 @@ const AzureAuthenticationButton = ({ onAuthenticated }) => {
     const logInType = isIE ? 'loginRedirect' : typeName;
     // Azure Login
     authenticationModule.login(logInType, returnedAccountInfo);
-
-    if (authenticated) {
-      history.push("/dashboard");
-    }
   };
   const logOut = () => {
     if (user) {
@@ -36,6 +32,9 @@ const AzureAuthenticationButton = ({ onAuthenticated }) => {
   const returnedAccountInfo = (user) => {
     // set state
     setAuthenticated((user === null || user === void 0 ? void 0 : user.name) ? true : false);
+    if (user) {
+      history.push("/dashboard");
+    }
     onAuthenticated(user);
     setUser(user);
   };

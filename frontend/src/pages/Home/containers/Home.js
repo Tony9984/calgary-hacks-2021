@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/home.scss';
 // import { AccountInfo } from '@azure/msal-browser';
 import AzureAuthenticationButton from '../../../azure/azure-authentication-component';
 
 const Course = () => {
-  // const [currentUser, setCurrentUser] = useState();
+  const [currentUser, setCurrentUser] = useState();
 
-  // const onAuthenticated = async (userAccountInfo) => {
-  //   setCurrentUser(userAccountInfo);
-  // };
+  // authentication callback
+  const onAuthenticated = async userAccountInfo => {
+    setCurrentUser(userAccountInfo);
+    console.log(currentUser);
+  };
 
   return (
     <>
@@ -21,7 +23,7 @@ const Course = () => {
               that is guaranteed to promote <br />
               collaboration!
             </div>
-            <AzureAuthenticationButton onAuthenticated={null} />
+            <AzureAuthenticationButton onAuthenticated={onAuthenticated} />
           </div>
           <img
             src="https://res.cloudinary.com/die52atcc/image/upload/v1613275637/1d924bf33464844560ad20680e53e03f_xht7q7.png"
