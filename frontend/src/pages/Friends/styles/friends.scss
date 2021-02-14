@@ -1,0 +1,54 @@
+.friend-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+
+  .flex-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10%;
+  }
+
+  .center-vertical {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif !important;
+
+    .profile-name,
+    .profile-faculty {
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  .connect-btn {
+    border: none;
+    background: none;
+  }
+
+  .MuiButton-root {
+    min-width: 0 !important;
+  }
+
+  .connect-icon {
+    font-size: 40px !important;
+  }
+
+  .connect-icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.hr2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.3);
+}

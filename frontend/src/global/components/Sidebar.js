@@ -14,7 +14,9 @@ const Sidebar = () => {
         <div className="sidebar-icons">
           <AccountCircleOutlinedIcon className="sidebar-icons__icon" />
           <CalendarTodayIcon className="sidebar-icons__icon" />
-          <ChatBubbleOutlineOutlinedIcon className="sidebar-icons__icon" />
+          <a href="/friends">
+            <ChatBubbleOutlineOutlinedIcon className="sidebar-icons__icon" />
+          </a>
           <AttachFileOutlinedIcon className="sidebar-icons__icon" />
         </div>
         <SettingsOutlinedIcon className="sidebar-icons__icon" />
