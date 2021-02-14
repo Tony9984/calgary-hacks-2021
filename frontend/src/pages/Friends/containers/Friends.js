@@ -28,6 +28,30 @@ const Friends = () => {
       connection: 'In a study session for Discrete Structures',
       isDisturb: true,
     },
+    {
+      name: 'Kelly Steele',
+      imageUrl:
+        'https://res.cloudinary.com/die52atcc/image/upload/v1613256650/michael.jpg',
+      faculty: 'Faculty of Arts - McGill University',
+      connection: 'In a study session for Roman History',
+      isOnline: true,
+    },
+    {
+      name: 'Karla Cassidy',
+      imageUrl:
+        'https://res.cloudinary.com/die52atcc/image/upload/v1613256650/michael.jpg',
+      faculty: 'Faculty of Business - McGill University',
+      connection: 'Offline',
+      isOnline: false,
+    },
+    {
+      name: 'Katelin Curtis',
+      imageUrl:
+        'https://res.cloudinary.com/die52atcc/image/upload/v1613256650/michael.jpg',
+      faculty: 'Faculty of Science - McGill University',
+      connection: 'Online',
+      isOnline: true,
+    },
   ];
   // prettier-ignore
   const friendList = friends.map(person => {
