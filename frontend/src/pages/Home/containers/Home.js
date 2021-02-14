@@ -20,13 +20,6 @@ const Course = () => {
             to improve lives by improving <br />
             online education
           </div>
-          <button type="button" className="microsoft-btn">
-            <img
-              src="https://res.cloudinary.com/die52atcc/image/upload/v1613277980/ms-symbollockup_signin_light_zhagnz.png"
-              alt="login button"
-              // onClick={}
-            />
-          </button>
           <AzureAuthenticationButton onAuthenticated={null} />
         </div>
         <img

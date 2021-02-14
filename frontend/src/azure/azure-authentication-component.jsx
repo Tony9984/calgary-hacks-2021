@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { useState } from 'react';
 import AzureAuthenticationContext from './azure-authentication-context';
+import { useHistory } from "react-router-dom";
 
 const ua = window.navigator.userAgent;
 const msie = ua.indexOf('MSIE ');
@@ -12,6 +13,8 @@ const AzureAuthenticationButton = ({ onAuthenticated }) => {
   const authenticationModule = new AzureAuthenticationContext();
   const [authenticated, setAuthenticated] = useState(false);
   const [user, setUser] = useState();
+  let history = useHistory();
+
   const logIn = (method) => {
     const typeName = 'loginPopup';
     const logInType = isIE ? 'loginRedirect' : typeName;
@@ -23,6 +26,7 @@ const AzureAuthenticationButton = ({ onAuthenticated }) => {
       onAuthenticated(undefined);
       // Azure Logout
       authenticationModule.logout(user);
+      history.push("/");
     }
   };
   const returnedAccountInfo = (user) => {
@@ -30,9 +34,20 @@ const AzureAuthenticationButton = ({ onAuthenticated }) => {
     setAuthenticated((user === null || user === void 0 ? void 0 : user.name) ? true : false);
     onAuthenticated(user);
     setUser(user);
+
+    if (authenticated) {
+      history.push("/dashboard");
+    }
   };
   const showLogInButton = () => {
-    return (React.createElement('button', { id: 'authenticationButton', onClick: () => logIn('loginPopup') }, 'Log in'));
+    return (
+      <button type="button" onClick={() => logIn('loginPopup')} id='authenticationButton' className="microsoft-btn">
+        <img
+          src="https://res.cloudinary.com/die52atcc/image/upload/v1613277980/ms-symbollockup_signin_light_zhagnz.png"
+          alt="login button"
+        />
+      </button>
+    );
   };
   const showLogOutButton = () => {
     return (React.createElement('div', { id: 'authenticationButtonDiv' },
