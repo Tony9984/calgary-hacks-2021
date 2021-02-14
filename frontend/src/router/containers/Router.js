@@ -4,6 +4,7 @@ import Layout from '../../global/containers/Layout';
 
 import Dashboard from '../../pages/Dashboard';
 import Friends from '../../pages/Friends';
+import Course from '../../pages/CoursePage';
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
         <Switch>
           <Route exact path="/" component={Dashboard} />
           <Route exact path="/friends" component={Friends} />
+          <Route exact path="/course/:courseName" component={Course} />
         </Switch>
       </Layout>
     </BrowserRouter>

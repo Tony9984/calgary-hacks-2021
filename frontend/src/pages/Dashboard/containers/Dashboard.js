@@ -20,7 +20,7 @@ const Dashboard = () => {
       image: Math,
     },
     {
-      name: 'Finance',
+      name: 'Intro to Finance',
       instructor: 'Vadim Di Pietro',
       image: Finance,
     },
