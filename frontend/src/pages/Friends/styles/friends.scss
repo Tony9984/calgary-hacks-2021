@@ -32,6 +32,15 @@
     text-align: left;
     width: 100%;
     margin: 5px;
+
+    a {
+      text-decoration: none;
+      color: #1e2251;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   &__faculty {
