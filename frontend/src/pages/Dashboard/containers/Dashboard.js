@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Course from '../components/Course';
 import Science from '../../../assets/science.svg';
 import Math from '../../../assets/math.svg';
@@ -59,12 +60,17 @@ const Dashboard = () => {
         <div className="dashboard-courses__courses">
           {courses.map(({ name, instructor, image }, index) => {
             return (
-              <Course
-                name={name}
-                instructor={instructor}
-                image={image}
-                index={index}
-              />
+              <Link
+                to="/course/calculusII"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <Course
+                  name={name}
+                  instructor={instructor}
+                  image={image}
+                  index={index}
+                />
+              </Link>
             );
           })}
         </div>
