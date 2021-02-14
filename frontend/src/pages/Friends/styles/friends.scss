@@ -4,13 +4,9 @@
   align-items: center;
   height: 100px;
 
-  &__button {
-    border: none;
-    background: none;
-  }
-
-  &__icon {
-    font-size: 40px !important;
+  &__icon.MuiSvgIcon-root {
+    font-size: 2.3rem;
+    color: #1e2251;
   }
 }
 

@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Avatar } from '@material-ui/core';
-import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import { Avatar, IconButton } from '@material-ui/core';
+import DuoIcon from '@material-ui/icons/Duo';
 import {
   StyledBadgeOnline,
   StyledBadgeAway,
   StyledBadgeDisturb,
 } from '../../../global/components/StyledBadge';
 
-// eslint-disable-next-line react/prop-types
 const Friend = ({
   name,
   imageUrl,
@@ -76,9 +75,9 @@ const Friend = ({
           </div>
         </div>
         <div className="friend-status">{connection}</div>
-        <button type="button" className="friend__button">
-          <AddCircleOutlineIcon className="friend__icon" />
-        </button>
+        <IconButton>
+          <DuoIcon className="friend__icon" />
+        </IconButton>
       </div>
       <hr className="hr2" />
     </>
