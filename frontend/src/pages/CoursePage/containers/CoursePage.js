@@ -3,6 +3,8 @@ import Button from '@material-ui/core/Button';
 import CourseMate from '../components/CourseMate';
 
 const Course = () => {
+  const meetingUrl =
+    'https://teams.microsoft.com/l/channel/19%3a57c98d2546f6498f9787cfb9c2abf601%40thread.tacv2/General?groupId=fef849ef-062e-4803-8198-7a6d975f707e&tenantId=cd319671-52e7-4a68-afa9-fcf8f89f09ea';
   const classmates = [
     {
       name: 'Xin Rui Li',
@@ -64,7 +66,12 @@ const Course = () => {
     <div className="course-page">
       <div className="course-page-flex">
         <h1 className="course-page__header">Calculus II - Winter 2021</h1>
-        <Button variant="contained" className="course-page__button">
+        <Button
+          variant="contained"
+          className="course-page__button"
+          href={meetingUrl}
+          target="_blank"
+        >
           Join study call
         </Button>
       </div>
