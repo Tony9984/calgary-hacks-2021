@@ -37,7 +37,7 @@ const Friends = () => {
       isOnline: true,
     },
   ];
-
+  // prettier-ignore
   const friendList = friends.map(person => {
     return (
       <Friend
