@@ -15,21 +15,23 @@ const Course = () => {
   return (
     <>
       <div className="landing-page">
-        <div className="landing-description">
-          <h1 className="landing-page__header">Basis</h1>
-          <h2 className="landing-page__subheader">for students</h2>
-          <div className="landing-page__description">
-            to improve lives by improving <br />
-            online education
+        <div className="landing-page-flex">
+          <div className="landing-description">
+            <h1 className="landing-page__header">A virtual study space...</h1>
+            <h2 className="landing-page__subheader">for students</h2>
+            <div className="landing-page__description">
+              that is guaranteed to promote <br />
+              collaboration!
+            </div>
+            <AzureAuthenticationButton onAuthenticated={onAuthenticated} />
           </div>
-          <AzureAuthenticationButton onAuthenticated={onAuthenticated} />
+          <img
+            src="https://res.cloudinary.com/die52atcc/image/upload/v1613275637/1d924bf33464844560ad20680e53e03f_xht7q7.png"
+            alt="home page"
+            width="700"
+            className="landing-image"
+          />
         </div>
-        <img
-          src="https://res.cloudinary.com/die52atcc/image/upload/v1613275637/1d924bf33464844560ad20680e53e03f_xht7q7.png"
-          alt="home page"
-          width="700"
-          className="landing-image"
-        />
       </div>
     </>
   );

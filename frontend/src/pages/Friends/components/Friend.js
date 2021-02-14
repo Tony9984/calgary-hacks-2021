@@ -6,6 +6,7 @@ import {
   StyledBadgeOnline,
   StyledBadgeAway,
   StyledBadgeDisturb,
+  StyledBadgeOffline,
 } from '../../../global/components/StyledBadge';
 
 const Friend = ({
@@ -16,6 +17,7 @@ const Friend = ({
   isOnline,
   isAway,
   isDisturb,
+  isOffline,
 }) => {
   const videoLink =
     'https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzFkMzI4NmMtYTg1Mi00MzZmLTgwNjctN2Y0ODgxMWFmYWI1%40thread.v2/0?context=%7b%22Tid%22%3a%22cd319671-52e7-4a68-afa9-fcf8f89f09ea%22%2c%22Oid%22%3a%225c851f01-0eb2-4cc3-8694-c9a10cda403b%22%7d';
@@ -71,6 +73,22 @@ const Friend = ({
               />
             </StyledBadgeDisturb>
           )}
+          {isOffline && (
+            <StyledBadgeOffline
+              overlap="circle"
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'right',
+              }}
+              variant="dot"
+            >
+              <Avatar
+                src={imageUrl}
+                alt={name}
+                className="friend-info__avatar"
+              />
+            </StyledBadgeOffline>
+          )}
           <div className="friend-info-container">
             <p className="friend-info-container__name">
               <a href={`/profile/${name}`}>{name}</a>
@@ -98,12 +116,14 @@ Friend.propTypes = {
   isOnline: PropTypes.bool,
   isAway: PropTypes.bool,
   isDisturb: PropTypes.bool,
+  isOffline: PropTypes.bool,
 };
 
 Friend.defaultProps = {
   isOnline: false,
   isAway: false,
   isDisturb: false,
+  isOffline: false,
 };
 
 export default Friend;

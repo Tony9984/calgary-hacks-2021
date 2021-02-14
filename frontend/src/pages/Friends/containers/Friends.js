@@ -42,7 +42,7 @@ const Friends = () => {
         'https://res.cloudinary.com/die52atcc/image/upload/v1613276402/student2_tcxdc2.png',
       faculty: 'Faculty of Business - McGill University',
       connection: 'Offline',
-      isOnline: false,
+      isOffline: true,
     },
     {
       name: 'Katelin Curtis',
@@ -50,7 +50,7 @@ const Friends = () => {
         'https://res.cloudinary.com/die52atcc/image/upload/v1613276398/student4_bbuo7b.png',
       faculty: 'Faculty of Engineering - McGill University',
       connection: 'Offline',
-      isOnline: false,
+      isOffline: true,
     },
     {
       name: 'Karla Hamel',
@@ -58,7 +58,7 @@ const Friends = () => {
         'https://res.cloudinary.com/die52atcc/image/upload/v1613276404/student1_hr02ga.png',
       faculty: 'Faculty of Science - McGill University',
       connection: 'Offline',
-      isOnline: false,
+      isOffline: true,
     },
   ];
   // prettier-ignore
@@ -72,6 +72,7 @@ const Friends = () => {
         isAway={person.isAway}
         isDisturb={person.isDisturb}
         isOnline={person.isOnline}
+        isOffline={person.isOffline}
       />
     );
   });
